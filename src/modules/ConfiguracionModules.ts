@@ -5,6 +5,7 @@ interface ModuleConfig {
   middleware?: any[];
 }
 
+
 export const modules: { [key: string]: ModuleConfig } = {
   serv: {
     active: false,
