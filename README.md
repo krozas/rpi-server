@@ -79,7 +79,7 @@ Estructura:
 
 ---
 
-## 📦 🛠️ Requisitos
+## 🛠️ Requisitos
 Node.js ≥ 20 
 npm 
 No se necesita instalar SQLite manualmente
