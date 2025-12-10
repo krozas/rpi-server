@@ -1,9 +1,53 @@
 # DGI - RPI
 
-Servidor Node con express, typescript y knex con sqllite3-better para la base de datos.
-Proyecto para RPI. Concurso Programador/a de Aplicaciones Informáticas Senior MF6 2025.
+Este proyecto es un servidor construido con Node.js, Express, Knex, TypeScript y una base de datos SQLite3 en memoria.
+La base es recreada en cada inicio, por lo que es ideal para pruebas rápidas, demos o entornos sin persistencia. 
+
+Tecnologías
+
+Node.js
+Express
+Knex (Query Builder)
+SQLite3-better en memoria (:memory:)
+TypeScript
 
 Estructura:
+
+project/
+├── src/
+│   ├── config/
+│   │   ├── knexRpi.ts 
+│   │   database/ 
+│   │   ├── database.config.ts
+│   ├── routes/
+│   ├── middlewares/
+│   ├── modules/
+│   │   ├── configuracion/
+│   │   │   ├── ciudades/
+│   │   │   │   ├── routes/
+│   │   │   │   ├── services/
+│   │   │   │   ├── repository/
+│   │   │   │   ├── types/ 
+│   │   │   ├── departamentos/
+│   │   │   │   ├── routes/
+│   │   │   │   ├── services/
+│   │   │   │   ├── repository
+│   │   │   │   ├── types/  
+│   │   ├── inmuebles/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   ├── repository/
+│   │   │   ├── types/
+│   │   │   └── index.ts
+│   │   ├── personas/
+│   │   │   ├── routes/
+│   │   │   ├── services/
+│   │   │   └── types/
+│   └── index.ts
+├── knexfile.ts
+├── package.json
+├── tsconfig.json
+└── README.md
 
 - src/config: archivos de configuración (variables de entorno, knex, etc)
 - src/middlewares: middlewares para las requests
@@ -16,3 +60,25 @@ Estructura:
       - repository: código con lógica de funciones a ejecutar en la base de datos.
       - types: tipos del módulo.  
       - utils: utilidades para el módulo.
+
+
+🛠️ Requisitos
+Node.js ≥ 20 
+npm 
+
+No se necesita instalar SQLite manualmente
+
+📦 Instalación
+npm install
+
+
+▶️ Ejecutar el servidor
+
+Modo desarrollo:
+npm run dev
+
+El servidor corre por defecto en: http://localhost:9100
+
+📌 Notas importantes
+
+SQLite en memoria se borra cada vez que el servidor se reinicia. 
