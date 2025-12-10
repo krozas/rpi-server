@@ -4,7 +4,6 @@ Este proyecto es un servidor construido con Node.js, Express, Knex, TypeScript y
 La base es recreada en cada inicio, por lo que es ideal para pruebas rápidas, demos o entornos sin persistencia. 
 
 Tecnologías
-
 Node.js
 Express
 Knex (Query Builder)
@@ -28,8 +27,11 @@ Estructura:
 🛠️ Requisitos
 Node.js ≥ 20 
 npm 
-
 No se necesita instalar SQLite manualmente
+
+Descargar el proyecto desde GitHub
+git clone https://github.com/pjn/rpi-server.git
+
 
 📦 Instalación
 npm install
