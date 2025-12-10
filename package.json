@@ -11,7 +11,7 @@
     "build:ts": "npm run task:clean && npm run task-generate-prod",
     "build": "babel src --extensions \".ts,.js\" --out-dir dist --copy-files",
     "start": "node --env-file=.env pm2 start dist/app.js",
-    "dev": "ts-node-dev --files -r tsconfig-paths/register  --env-file=.env --respawn --ignore-watch node_modules src/app.ts",
+    "dev": "ts-node-dev --files -r tsconfig-paths/register  --ignore-watch node_modules src/app.ts",
     "start:dev": "ts-node-dev -r tsconfig-paths/register  --inspect=0.0.0.0:9229 --env-file=.env --respawn --ignore-watch node_modules src/app.ts",
     "start:prod": "node --env-file=dist/.env.prod dist/app.js",
     "task:clean": "rimraf dist; exit 0",
