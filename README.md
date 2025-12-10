@@ -18,8 +18,12 @@ TypeScript
 
 ts-node-dev (para recarga en desarrollo)
 
+---
+
 
 ## 📁 Estructura del proyecto
+
+```
 project/
 ├── src/
 │   ├── config/
