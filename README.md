@@ -1,6 +1,6 @@
 # DGI- RPI 
 
-#🗄️ Server Node.js con Express, Knex, SQLite3 en memoria y TypeScript
+# 🗄️ Server Node.js con Express, Knex, SQLite3 en memoria y TypeScript
 
 Este proyecto es un servidor construido con Node.js, Express, Knex, TypeScript y una base de datos SQLite3 en memoria.
 La base es recreada en cada inicio, por lo que es ideal para pruebas rápidas, demos o entornos sin persistencia.
