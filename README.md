@@ -1,4 +1,6 @@
-🗄️ Server Node.js con Express, Knex, SQLite3 en memoria y TypeScript
+# DGI- RPI 
+
+# 🗄️ Server Node.js con Express, Knex, SQLite3 en memoria y TypeScript
 
 Este proyecto es un servidor construido con Node.js, Express, Knex, TypeScript y una base de datos SQLite3 en memoria.
 La base es recreada en cada inicio, por lo que es ideal para pruebas rápidas, demos o entornos sin persistencia.
@@ -18,8 +20,12 @@ TypeScript
 
 ts-node-dev (para recarga en desarrollo)
 
+---
+
 
 ## 📁 Estructura del proyecto
+
+```
 project/
 ├── src/
 │   ├── config/
@@ -55,7 +61,7 @@ project/
 ├── package.json
 ├── tsconfig.json
 └── README.md
-
+```
 
 
 Estructura:
@@ -73,7 +79,7 @@ Estructura:
 
 ---
 
-## 📦 🛠️ Requisitos
+## 🛠️ Requisitos
 Node.js ≥ 20 
 npm 
 No se necesita instalar SQLite manualmente
